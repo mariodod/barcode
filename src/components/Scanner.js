@@ -19,7 +19,7 @@ const Scanner = ({ onDetected }) => {
             },
             numOfWorkers: 2,
             decoder: {
-                readers: [ 'code_128_reader' ],
+                readers: [ 'code_39_reader' ],
             },
             locate: true,
         }, (err) => {
