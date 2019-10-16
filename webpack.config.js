@@ -1,4 +1,5 @@
 module.exports = {
+    mode: "production",
     entry: [
         './src/index.js'
     ],
@@ -26,11 +27,11 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     output: {
-        path: __dirname + '/public',
+        path: __dirname + '/dist',
         publicPath: '/',
         filename: 'bundle.js'
     },
     devServer: {
-        contentBase: './public'
+        contentBase: './dist'
     }
 };
